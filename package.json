@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "tailwind": "^4.0.0"
+  },
+  "name": "maquete",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
