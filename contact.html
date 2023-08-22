@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-neutral-300">
+    <header
+      class="bg-red-500 text-pink-600 flex relative justify-between w-full items-center shadow-md dark:shadow-pink-500 z-[800]"
+    >
+      <div
+        class="z-20 bg-neutral-50 p-4 w-full flex justify-between items-center overflow-hidden"
+      >
+        <div class="h-full w-32">
+          <a class=" " href="#">
+            <img class=" " src="/assets/amazing_brand.png" alt="Logo" />
+          </a>
+        </div>
+        <nav
+          class="hidden md:flex gap-2 [&>a]:capitalize [&>a]:p-2 [&>a]:rounded [&>a]:duration-300 [&>a]:relative [&>a]:before:duration-300 [&>a]:before:h-[2px] [&>a]:before:w-0 hover:[&>a]:before:w-full [&>a]:before:bg-pink-500 [&>a]:before:absolute [&>a]:before:bottom-0 [&>a]:before:left-0 [&>a]:before:shadow-lg [&>a]:before:shadow-purple-600"
+        >
+          <a class=" " href="./index.html">Home</a>
+          <a class="" href="./upcoming.html">upcoming events</a>
+          <a class="" href="./past.html">past events</a>
+          <a class="" href="#">contact</a>
+          <a class="" href="./stats.html">stats</a>
+        </nav>
+        <button
+          id="open-menu-button"
+          class="border border-neutral-50 rounded text-xl md:hidden"
+        >
+          <i class="fa fa-bars p-2"></i>
+        </button>
+      </div>
+      <nav
+        class="absolute w-full z-10 -translate-y-full top-full duration-300 bg-neutral-800 dropdown-menu md:hidden"
+      >
+        <ul
+          class="font-semibold [&>li]:flex [&>li>a]:w-full [&>li>a]:p-2 [&>li>a]:text-center"
+        >
+          <li class="">
+            <a class="" href="#">Home</a>
+          </li>
+          <li>
+            <a class="" href="./upcoming.html">upcoming events</a>
+          </li>
+          <li>
+            <a class="" href="./past.html">past events</a>
+          </li>
+          <li>
+            <a class="" href="./contact.html">contact</a>
+          </li>
+          <li>
+            <a class="" href="./stats.html">stats</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="bg-neutral-300 overflow-hidden relative min-w-screen min-h-screen w-full flex flex-col md:flex-row md:justify-around md:items-stretch flex-wrap"
+    >
+      <img
+        class="h-full w-full absolute top-0 left-0 object-cover"
+        src="./assets/optional_banner_5.jpg"
+      />
+      <div
+        class="flex w-full h-[20vh] overflow-hidden justify-center items-center relative mt-4"
+      >
+        <div
+          class="flex flex-col items-center justify-center absolute w-full z-50 h-full backdrop-brightness-50 text-6xl sm:text-9xl text-white uppercase font-extrabold"
+        >
+          <h1 class="">Contact us</h1>
+        </div>
+      </div>
+
+      <section
+        class="flex flex-col gap-8 relative w-full justify-center items-center p-8"
+      >
+        <img src />
+        <div
+          class="bg-neutral-400 backdrop-blur-md bg-opacity-30 rounded-md p-4"
+        >
+          <form
+            class="flex flex-col items-start justify-center gap-4 [&>label]:flex [&>label]:flex-col [&>label]:font-semibold [&>label]:text-neutral-100 [&_input]:rounded-lg [&_textarea]:rounded-lg [&_input]:text-neutral-950 [&_input]:px-2 [&_textarea]:text-neutral-950 [&_textarea]:px-2"
+          >
+            <label for="name">
+              Your Name
+              <input name="name" type="text" />
+            </label>
+            <label for="mail">
+              Email
+              <input name="mail" type="email" />
+            </label>
+            <label for="message">
+              Message
+              <textarea name="message" cols="30" rows="10"></textarea>
+            </label>
+
+            <button
+              class="self-end p-2 bg-pink-600 text-neutral-100 rounded-md capitalize font-bold tracking-wider"
+              type="submit"
+            >
+              submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="h-full bg-rose-900 flex flex-col md:flex-row justify-around items-center overflow-hidden"
+    >
+      <div class="basis-1/3 p-8">
+        <img class="brightness-0" src="/assets//amazing_brand.png" />
+      </div>
+      <div
+        class="[&>div]:w-8 [&>div]:aspect-square py-8 [&>div>img]:rounded-full flex gap-4 justify-around p-4"
+      >
+        <div>
+          <img src="/assets/facebook.png" />
+        </div>
+        <div>
+          <img src="/assets/instagram.png" />
+        </div>
+        <div>
+          <img src="/assets/whatsapp.png" />
+        </div>
+      </div>
+
+      <div class="p-2 w-full flex items-center gap-2 basis-1/3">
+        <span class="w-full h-[1px] bg-white flex"></span>
+        <span class="text-neutral-50 uppercase tracking-widest">COHORT</span>
+        <span class="w-full h-[1px] bg-white flex"></span>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
