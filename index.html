@@ -132,83 +132,9 @@
           </div>
         </div>
         <div
-          class="flex flex-col sm:flex-row justify-around items-stretch p-8 gap-8"
-        >
-          <div
-            class="md:basis-[30%] flex flex-col bg-neutral-100 shadow-md rounded-md overflow-hidden w-full"
-          >
-            <div class="w-full basis-2/4">
-              <img
-                class="object-cover h-full"
-                src="/db/images.db/food_fair.jpg"
-              />
-            </div>
-            <div class="flex flex-col gap-4 p-4 basis-2/4">
-              <h2 class="font-bold text-xl items-center">TItulo de card</h2>
-              <p class="leading-6 line-clamp-5 text-ellipsis">
-                DESCRIPCION ALRGA DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ ES UNA
-                VNADa dade texto un onA DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ
-                ES UNA VNADa dade texto un on
-              </p>
-              <footer class="flex p-2 gap-8 justify-betwe items-center mt-auto">
-                <span class="font-semibold"> $103.50 </span>
-                <button class="p-1 border border-black rounded w-full">
-                  Details
-                </button>
-              </footer>
-            </div>
-          </div>
-          <div
-            class="md:basis-[30%] flex flex-col bg-neutral-100 shadow-md rounded-md overflow-hidden w-full"
-          >
-            <div class="w-full basis-2/4">
-              <img class="object-cover h-full" src="/db/images.db/books.jpg" />
-            </div>
-            <div class="flex flex-col gap-4 p-4 justify-around basis-2/4">
-              <h2 class="font-bold text-xl items-center">TItulo de card</h2>
-              <p class="leading-6 line-clamp-5">
-                DESCRIPCION ALRGA DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ ES UNA
-                un onA DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ ES UNA VNADa dade
-                texto un on
-              </p>
-              <footer
-                class="flex p-2 gap-8 justify-around items-center mt-auto"
-              >
-                <span class="font-semibold"> $203.50 </span>
-                <button class="p-1 border border-black rounded w-full">
-                  Details
-                </button>
-              </footer>
-            </div>
-          </div>
-          <div
-            class="md:basis-[30%] flex flex-col bg-neutral-100 shadow-md rounded-md overflow-hidden w-full"
-          >
-            <div class="w-full basis-2/4">
-              <img class="object-cover h-full" src="/db/images.db/cinema.jpg" />
-            </div>
-            <div class="flex flex-col gap-4 p-4 justify-between basis-2/4">
-              <h2 class="font-bold text-xl items-center">TItulo de card</h2>
-              <p class="leading-6 line-clamp-5">
-                DESCRIPCION ALRGA DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ ES UNA
-                VNADa dade texto un onA DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ
-                ES UNA VNADa dade texto un ontexto un onA DEL TITLO QPERO QUE
-                VAMOS A ACORDTAR PQ ES UNA VNADa dade texto un ontexto un onA
-                DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ ES UNA VNADa dade texto
-                un ontexto un onA DEL TITLO QPERO QUE VAMOS A ACORDTAR PQ ES UNA
-                VNADa dade texto un on
-              </p>
-              <footer
-                class="flex p-2 gap-8 justify-around items-center mt-auto"
-              >
-                <span class="font-semibold"> $203.50 </span>
-                <button class="p-1 border border-black rounded w-full">
-                  Details
-                </button>
-              </footer>
-            </div>
-          </div>
-        </div>
+          id="cards-container"
+          class="flex flex-col flex-wrap sm:flex-row justify-around items-stretch p-8 gap-8 [&>div]:h-min-max"
+        ></div>
       </section>
     </main>
     <footer
@@ -237,6 +163,7 @@
         <span class="w-full h-[1px] bg-white flex"></span>
       </div>
     </footer>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="./pages/home/home.js"></script>
   </body>
 </html>

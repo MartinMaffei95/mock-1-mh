@@ -1,11 +1,11 @@
 "use strict";
-var hamburgerButton = document.querySelector('#open-menu-button');
-var dropdownMenu = document.querySelector('.dropdown-menu');
-var carousel = document.querySelector('.carousel');
-window.addEventListener('resize', function () {
+const hamburgerButton = document.querySelector('#open-menu-button');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+const carousel = document.querySelector('.carousel');
+window.addEventListener('resize', () => {
     console.log(window.innerWidth);
 });
-var toggleDropDownMenu = function () {
+const toggleDropDownMenu = () => {
     if (dropdownMenu === null || dropdownMenu === void 0 ? void 0 : dropdownMenu.className.includes('-translate-y-full')) {
         dropdownMenu === null || dropdownMenu === void 0 ? void 0 : dropdownMenu.classList.remove('-translate-y-full');
     }
@@ -14,13 +14,13 @@ var toggleDropDownMenu = function () {
     }
 };
 hamburgerButton === null || hamburgerButton === void 0 ? void 0 : hamburgerButton.addEventListener('click', toggleDropDownMenu);
-var actualSlide = 0;
-var animateCarousel = function () {
-    var carouselChildrens = carousel === null || carousel === void 0 ? void 0 : carousel.children;
+let actualSlide = 0;
+const animateCarousel = () => {
+    const carouselChildrens = carousel === null || carousel === void 0 ? void 0 : carousel.children;
     if (!carouselChildrens)
         return;
-    var nchildrens = carouselChildrens.length;
-    var prevSlide = actualSlide - 1 >= 0 ? actualSlide - 1 : nchildrens - 1;
+    const nchildrens = carouselChildrens.length;
+    const prevSlide = actualSlide - 1 >= 0 ? actualSlide - 1 : nchildrens - 1;
     console.log(actualSlide);
     carouselChildrens[actualSlide].classList.add('opacity-100');
     // validate if is one of the carousel children.
@@ -29,6 +29,6 @@ var animateCarousel = function () {
     carouselChildrens[prevSlide].classList.remove('opacity-100');
     carouselChildrens[prevSlide].classList.add('opacity-0');
 };
-setInterval(function () {
+setInterval(() => {
     animateCarousel();
 }, 2000);
